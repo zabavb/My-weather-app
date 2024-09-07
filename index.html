@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather forecast</title>
+</head>
+
+<body>
+    <header>
+        <p id="title-p">MY WEATHER</p>
+        <input id="srch-input" type="text"></input>
+    </header>
+
+    <div id="tabs-div">
+        <p id="tab-today-p" class="tab-p">Today</p>
+        <p id="tab-5-day-forecast-p" class="tab-p">5-day forecast</p>
+    </div>
+
+    <div id="crn-wth-div" class="info-div">
+        <p id="crn-wth-p" class="subtitle-p">CURRENT WEATHER</p>
+        <p id="crn-date-p" class="subtitle-p"></p>
+        <div id="crn-wth-info-div">
+            <div class="icon-div">
+                <img id="crn-wth-img" class="medium-img">
+                <p id="crn-wth" class="medium-p"></p>
+            </div>
+            <div class="temp-div">
+                <p id="crn-wth-temp" class="large-p"></p>
+                <p id="crn-wth-temp-real-feel" class="tiny-p"></p>
+            </div>
+            <div id="sun-rise-set-dur-div">
+                <div id="sun-rise-set-dur-left-part">
+                    <p class="medium-p">Sunrise:</p>
+                    <p class="medium-p">Sunset:</p>
+                    <p class="medium-p">Duration:</p>
+                </div>
+                <div id="sun-rise-set-dur-right-part">
+                    <p id="crn-wth-sun-rise" class="medium-p"></p>
+                    <p id="crn-wth-sun-set" class="medium-p"></p>
+                    <p id="crn-wth-duration" class="medium-p"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-div" id="days-forecast-div">
+        <div class="day-forecast-div">
+            <p class="subtitle-p weekday"></p>
+            <p class="medium-p mounthday"></p>
+            <img class="large-img days-img">
+            <p class="large-p days-temp"></p>
+            <p class="medium-p days-descrption"></p>
+        </div>
+        <div class="day-forecast-div">
+            <p class="subtitle-p weekday"></p>
+            <p class="medium-p mounthday"></p>
+            <img class="large-img days-img">
+            <p class="large-p days-temp"></p>
+            <p class="medium-p days-descrption"></p>
+        </div>
+        <div class="day-forecast-div">
+            <p class="subtitle-p weekday"></p>
+            <p class="medium-p mounthday"></p>
+            <img class="large-img days-img">
+            <p class="large-p days-temp"></p>
+            <p class="medium-p days-descrption"></p>
+        </div>
+        <div class="day-forecast-div">
+            <p class="subtitle-p weekday"></p>
+            <p class="medium-p mounthday"></p>
+            <img class="large-img days-img">
+            <p class="large-p days-temp"></p>
+            <p class="medium-p days-descrption"></p>
+        </div>
+        <div class="day-forecast-div">
+            <p class="subtitle-p weekday"></p>
+            <p class="medium-p mounthday"></p>
+            <img class="large-img days-img">
+            <p class="large-p days-temp"></p>
+            <p class="medium-p days-descrption"></p>
+        </div>
+    </div>
+
+    <div class="info-div">
+        <p class="subtitle-p">HOURLY</p>
+        <table>
+            <tr id="table-hr-tr">
+                <td class="table-unchanged-part-td" id="table-hr-td">
+                    <p class="medium-p"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+                <td>
+                    <p class="medium-p table-hr"></p>
+                    <img class="medium-img table-img">
+                </td>
+            </tr>
+            <tr id="table-forecast-tr">
+                <td class="table-unchanged-part-td" id="table-forecast-td">
+                    <p class="medium-p">Forecast</p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-forecast"></p>
+                </td>
+            </tr>
+            <tr id="table-temp-tr">
+                <td class="table-unchanged-part-td" id="table-temp-td">
+                    <p class="medium-p">Temp (°C)</p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-temp"></p>
+                </td>
+            </tr>
+            <tr id="table-realFeel-tr">
+                <td class="table-unchanged-part-td" id="table-realFeel-td">
+                    <p class="medium-p">RealFeel</p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-real-feel"></p>
+                </td>
+            </tr>
+            <tr id="table-wind-tr">
+                <td class="table-unchanged-part-td" id="table-wind-td">
+                    <p class="medium-p">Wind (km/h)</p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+                <td>
+                    <p class="medium-p table-wind"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

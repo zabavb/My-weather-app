@@ -1,0 +1,241 @@
+html,
+body {
+    margin: 0;
+    background-color: rgb(215, 215, 215);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 15px 25% 15px 25%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-p {
+    font-size: 30px;
+}
+
+.subtitle-p {
+    font-size: 18px;
+}
+
+#title-p,
+.subtitle-p {
+    margin: 0;
+
+    color: rgb(16, 156, 152);
+    font-weight: bold;
+}
+
+#srch-input {
+    width: 200px;
+    height: 25px;
+    margin-top: 3px;
+
+    font-size: 17px;
+    color: rgb(70, 70, 70);
+    padding: 0px 10px 0px 10px;
+
+    outline: none;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 5px;
+}
+
+#srch-input:focus {
+    border: 2px solid rgb(16, 156, 152);
+}
+
+#tabs-div {
+    height: 45px;
+    padding: 0px 20% 0px 20%;
+
+    background-color: rgb(72, 68, 68);
+
+    display: flex;
+}
+
+.tab-p {
+    height: 25px;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
+
+    color: rgb(234, 234, 234);
+    font-weight: bold;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.highlighted-tab {
+    border-bottom: 4px solid rgb(16, 156, 152);
+    border-radius: 5px;
+}
+
+.info-div {
+    margin: 30px 21% 30px 21%;
+    padding: 20px 3% 20px 3%;
+    background-color: rgb(234, 234, 234);
+
+    border-radius: 17px;
+}
+
+#crn-wth-p {
+    float: left;
+}
+
+#crn-date-p {
+    float: right;
+}
+
+#crn-wth-info-div {
+    margin-top: 40px;
+
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+
+.medium-p {
+    font-size: 17px;
+}
+
+.large-p {
+    font-size: 40px;
+}
+
+.tiny-p {
+    font-size: 14px;
+}
+
+.tiny-p,
+.medium-p,
+.large-p {
+    margin: 0;
+}
+
+.medium-img {
+    width: 70px;
+    height: 70px;
+}
+
+.tiny-img {
+    width: 30px;
+    height: 30px;
+}
+
+.large-img {
+    width: 90px;
+    height: 90px;
+}
+
+.large-img,
+.medium-img {
+    background-color: rgb(215, 215, 215);
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 5px rgb(215, 215, 215);
+}
+
+.icon-div {
+    text-align: center;
+}
+
+.temp-div {
+    margin-top: 13px;
+
+    text-align: center;
+}
+
+#sun-rise-set-dur-div {
+    margin-top: 7px;
+
+    display: flex;
+}
+
+#sun-rise-set-dur-right-part {
+    margin-left: 10px;
+}
+
+#sun-rise-set-dur-left-part>p,
+#sun-rise-set-dur-right-part>p {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+.table-unchanged-part-td {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+    padding-top: 12px;
+}
+
+#cities-div {
+    padding: 0px 3% 0px 3%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.city-div {
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: bolder;
+    background-color: rgb(215, 215, 215);
+    border-radius: 7px;
+}
+
+.city-div>p {
+    margin-top: 6.5px;
+}
+
+#days-forecast-div {
+    padding: 25px 0% 25px 0%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: rgb(234, 234, 234);
+    border-radius: 17px;
+}
+
+.day-forecast-div {
+    width: 15%;
+    padding: 10px 1% 10px 1%;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.day-forecast-div:hover {
+    cursor: pointer;
+}
+
+#crn-wth-img {
+    margin-bottom: 5px;
+}
+
+.days-img {
+    margin-top: 7px;
+}
+
+.table-img {
+    margin-top: 13px;
+}
+
+.day-forecast-div>p {
+    padding: 1.5px 0px 1.5px 0px;
+}
